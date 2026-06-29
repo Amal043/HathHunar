@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Showcase | HathHunar - Prayagraj's Premium Digital Marketing Agency</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="HathHunar is Prayagraj's premier creative digital marketing agency. We specialize in handcrafted social media advertising, graphic design, premium website development, high-impact video editing, and SEO.">
+  <meta name="keywords" content="digital marketing agency, Prayagraj, social media marketing, website development, graphic design, video editing, SEO, Uttar Pradesh, HathHunar">
+  <meta name="author" content="HathHunar">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Showcase | HathHunar">
+  <meta property="og:description" content="Prayagraj's premier digital agency. Handcrafted social media advertising, graphic design, premium website development, video editing, and SEO.">
+  <meta property="og:url" content="https://hathhunar.com/showcase.html">
+  
+  <!-- Favicon -->
+  <link class="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23070b13%22/><text y=%2270%22 x=%2220%22 font-size=%2260%22 font-family=%22Outfit%22 font-weight=%22800%22 fill=%22%23F59E0B%22>H</text></svg>">
+
+  <!-- Core Stylesheet with Cache Buster -->
+  <link rel="stylesheet" href="style.css?v=4.0">
+
+  <!-- Premium Design Overrides -->
+  <style>
+    /* ── FADE IN TWEAKS ──────────────────────────── */
+    .fade-in-up {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: opacity 0.9s cubic-bezier(0.4,0,0.2,1), transform 0.9s cubic-bezier(0.4,0,0.2,1) !important;
+    }
+
+    /* ── SECTION DIVIDER ─────────────────────────── */
+    section { border-bottom: 1px solid rgba(99, 102, 241, 0.08); }
+  </style>
+</head>
+<body>
+
+  <!-- Background Glow Orbs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="nav-logo" style="display: flex; align-items: center; gap: 4px;">
+        <img src="images/logo.png" alt="HathHunar Logo" class="logo-icon-img" style="height: 44px; width: auto; object-fit: contain; border-radius: 6px;">
+        Hath<span>Hunar</span>
+      </a>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="showcase.html" class="nav-link active">Showcase</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="upload.html" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.9rem;">
+          Upload
+        </a>
+      </div>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <i data-lucide="menu" id="menu-icon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Showcase/Portfolio Section -->
+  <section class="section page-section" id="portfolio" style="padding-top: 150px;">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="section-tag">Our Work</span>
+        <h2 class="section-title">Case Studies</h2>
+        <p class="section-subtitle">Real results for real brands. Filter through our latest campaigns and developments to see our digital craftsmanship in action.</p>
+      </div>
+
+      <div class="portfolio-filter fade-in-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ads">Ads</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="dev">Development</button>
+        <button class="filter-btn" data-filter="video">Video</button>
+        <button class="filter-btn" data-filter="seo">SEO</button>
+      </div>
+
+      <div class="portfolio-grid fade-in-up delay-1">
+        <!-- Item 1: Ads -->
+        <div class="portfolio-item glass-panel" data-category="ads">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="ChaiChowk Social Media Ads Campaign">
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">Social Media Ads</span>
+            <h3 class="portfolio-title">ChaiChowk Meta Ads</h3>
+            <div class="portfolio-metric">
+              <i data-lucide="trending-up" style="width: 14px; height: 14px;"></i>
+              <span>4.2x ROI Generated</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Video -->
+        <div class="portfolio-item glass-panel" data-category="video">
+          <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="Uttar Pradesh Tourism Promo Video editing">
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">Video Editing</span>
+            <h3 class="portfolio-title">UP Tourism Promo Reel</h3>
+            <div class="portfolio-metric">
+              <i data-lucide="eye" style="width: 14px; height: 14px;"></i>
+              <span>1.2M+ Views</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Dev -->
+        <div class="portfolio-item glass-panel" data-category="dev">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Sangam FinTech Platform Website development">
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">Web Development</span>
+            <h3 class="portfolio-title">Sangam FinTech Hub</h3>
+            <div class="portfolio-metric">
+              <i data-lucide="zap" style="width: 14px; height: 14px;"></i>
+              <span>0.7s Page Load Time</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Design -->
+        <div class="portfolio-item glass-panel" data-category="design">
+          <img src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?auto=format&fit=crop&w=600&q=80" alt="AyurGlow Organic Skincare Branding design">
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">Graphic Design</span>
+            <h3 class="portfolio-title">AyurGlow Brand Identity</h3>
+            <div class="portfolio-metric">
+              <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i>
+              <span>Rebranding Complete</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: SEO -->
+        <div class="portfolio-item glass-panel" data-category="seo">
+          <img src="https://images.unsplash.com/photo-1571844307560-f551fa31d7a7?auto=format&fit=crop&w=600&q=80" alt="EduSpark Local SEO Marketing">
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">SEO Strategy</span>
+            <h3 class="portfolio-title">EduSpark Local Authority</h3>
+            <div class="portfolio-metric">
+              <i data-lucide="users" style="width: 14px; height: 14px;"></i>
+              <span>+280% Organic Leads</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Ads -->
+        <div class="portfolio-item glass-panel" data-category="ads">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="E-Commerce scaling campaign">
+          <div class="portfolio-overlay">
+            <span class="portfolio-cat">Social Media Ads</span>
+            <h3 class="portfolio-title">Sangam Retail Scales</h3>
+            <div class="portfolio-metric">
+              <i data-lucide="dollar-sign" style="width: 14px; height: 14px;"></i>
+              <span>₹12L Sales Generated</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials Nested Inside Showcase Page -->
+    <div style="background: rgba(4, 6, 10, 0.4); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); padding: 80px 0; margin-top: 80px;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Client Reviews</span>
+          <h2 class="section-title">Trusted By Innovators</h2>
+          <p class="section-subtitle">Read how our hand-crafted digital systems have empowered companies to scale and conquer their markets.</p>
+        </div>
+
+        <div class="testimonials-slider glass-panel">
+          <div class="testimonials-wrapper">
+            <!-- Slide 1 -->
+            <div class="testimonial-card active">
+              <div class="quote-icon">“</div>
+              <p class="testimonial-text">
+                "HathHunar took our local real estate firm in Prayagraj and projected us onto a state-wide level. Their high-impact reels and Facebook ad strategies generated more genuine leads in one month than we got all of last year. Pure professionals."
+              </p>
+              <div class="testimonial-client">
+                <div class="client-avatar">AC</div>
+                <div class="client-info">
+                  <div class="client-name">Amit Chaurasia</div>
+                  <div class="client-company">CEO, Sangam Estates</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-card">
+              <div class="quote-icon">“</div>
+              <p class="testimonial-text">
+                "The custom landing pages and SEO work HathHunar delivered were spectacular. They built our website from scratch, matching modern web speeds. We are currently ranking #1 locally for multiple educational keywords!"
+              </p>
+              <div class="testimonial-client">
+                <div class="client-avatar">SM</div>
+                <div class="client-info">
+                  <div class="client-name">Sneha Mishra</div>
+                  <div class="client-company">Director, EduSpark</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-card">
+              <div class="quote-icon">“</div>
+              <p class="testimonial-text">
+                "Their design team has an exquisite eye for detailing and corporate branding. They redesigned our entire product catalog and packaging templates. They truly represent the spirit of handcrafted craftsmanship."
+              </p>
+              <div class="testimonial-client">
+                <div class="client-avatar">VS</div>
+                <div class="client-info">
+                  <div class="client-name">Vikram Singh</div>
+                  <div class="client-company">Founder, ChaiChowk</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <button class="slider-btn" id="slider-prev" aria-label="Previous Testimonial">
+              <i data-lucide="chevron-left"></i>
+            </button>
+            <button class="slider-btn" id="slider-next" aria-label="Next Testimonial">
+              <i data-lucide="chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="margin-bottom: 20px; display: inline-flex; align-items: center; gap: 4px;">
+            <img src="images/logo.png" alt="HathHunar Logo" class="logo-icon-img" style="height: 44px; width: auto; object-fit: contain; border-radius: 6px;">
+            Hath<span>Hunar</span>
+          </a>
+          <p class="footer-description">
+            Prayagraj's premier digital agency specializing in premium ad campaigns, creative content architecture, and lightning-fast web solutions.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="HathHunar Instagram Account"><i data-lucide="instagram" style="width: 18px; height: 18px;"></i></a>
+            <a href="#" class="social-icon" aria-label="HathHunar LinkedIn Profile"><i data-lucide="linkedin" style="width: 18px; height: 18px;"></i></a>
+            <a href="#" class="social-icon" aria-label="HathHunar Twitter Handle"><i data-lucide="twitter" style="width: 18px; height: 18px;"></i></a>
+            <a href="#" class="social-icon" aria-label="HathHunar Facebook Page"><i data-lucide="facebook" style="width: 18px; height: 18px;"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Our Services</h4>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">Social Media Ads</a>
+            <a href="services.html" class="footer-link">Graphic Design & UI/UX</a>
+            <a href="services.html" class="footer-link">Website Development</a>
+            <a href="services.html" class="footer-link">Video Editing & Reels</a>
+            <a href="services.html" class="footer-link">Search Engine Optimization</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">HathHunar Info</h4>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="showcase.html" class="footer-link">Our Showcase</a>
+            <a href="contact.html" class="footer-link">Contact Desk</a>
+            <a href="upload.html" class="footer-link">Upload Desk</a>
+            <span class="footer-link" style="color: var(--text-muted);">Uttar Pradesh, India</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 HathHunar. All Rights Reserved. Handcrafted in Prayagraj, UP, India.</p>
+        <p>Premium Digital Systems & Growth</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Icon Library -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Interactive Operations Script with Cache Buster -->
+  <script src="main.js?v=3.0"></script>
+</body>
+</html>
