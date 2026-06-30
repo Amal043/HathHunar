@@ -1400,10 +1400,10 @@ textarea.form-input {
     width: 80%;
     max-width: 320px;
     height: 100vh;
-    background: rgba(7, 11, 19, 0.95);
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.95) 0%, rgba(59, 130, 246, 0.95) 100%);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
-    border-left: 1px solid var(--border-color);
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
     flex-direction: column;
     padding: 100px 40px;
     gap: 24px;
