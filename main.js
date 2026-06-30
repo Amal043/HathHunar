@@ -416,4 +416,55 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 150); // Increment progress bar over 1.5s
     });
   }
+
+  // 5. Dynamic Floating Bubbles Generator (Mockup Style)
+  const createFloatingBubbles = () => {
+    // Create Background Gradient Wrapper (z-index: -2)
+    const bgWrapper = document.createElement('div');
+    bgWrapper.style.position = 'fixed';
+    bgWrapper.style.top = '0';
+    bgWrapper.style.left = '0';
+    bgWrapper.style.width = '100vw';
+    bgWrapper.style.height = '100vh';
+    bgWrapper.style.background = 'var(--bg-gradient)';
+    bgWrapper.style.pointerEvents = 'none';
+    bgWrapper.style.zIndex = '-2';
+    document.body.appendChild(bgWrapper);
+
+    // Create Bubbles Container (z-index: -1)
+    const bubbleContainer = document.createElement('div');
+    bubbleContainer.style.position = 'fixed';
+    bubbleContainer.style.top = '0';
+    bubbleContainer.style.left = '0';
+    bubbleContainer.style.width = '100vw';
+    bubbleContainer.style.height = '100vh';
+    bubbleContainer.style.overflow = 'hidden';
+    bubbleContainer.style.pointerEvents = 'none';
+    bubbleContainer.style.zIndex = '-1';
+    document.body.appendChild(bubbleContainer);
+
+    const bubbleCount = 14;
+    for (let i = 0; i < bubbleCount; i++) {
+      const bubble = document.createElement('div');
+      bubble.classList.add('floating-bubble');
+      
+      const size = Math.floor(Math.random() * 70) + 20;
+      bubble.style.width = `${size}px`;
+      bubble.style.height = `${size}px`;
+      
+      bubble.style.left = `${Math.random() * 100}%`;
+      bubble.style.top = `${Math.random() * 100}%`;
+      
+      const duration = Math.floor(Math.random() * 15) + 15;
+      const delay = Math.floor(Math.random() * 10) * -1;
+      bubble.style.animationDuration = `${duration}s`;
+      bubble.style.animationDelay = `${delay}s`;
+      
+      bubble.style.opacity = (Math.random() * 0.35 + 0.35).toFixed(2);
+      
+      bubbleContainer.appendChild(bubble);
+    }
+  };
+
+  createFloatingBubbles();
 });
