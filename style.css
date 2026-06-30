@@ -36,6 +36,9 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+  width: 100% !important;
 }
 
 * {
@@ -48,7 +51,10 @@ body {
   background-color: transparent;
   color: var(--text-primary);
   font-family: var(--font-body);
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  position: relative;
   line-height: 1.6;
   background-image: 
     linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
@@ -1409,9 +1415,13 @@ textarea.form-input {
     gap: 24px;
     transition: var(--transition-normal);
     z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
   }
   .nav-menu.open {
     right: 0;
+    opacity: 1;
+    visibility: visible;
   }
   .nav-cta {
     display: none; /* Hide secondary cta on mobile */
